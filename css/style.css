@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container-bg.bg0 {
+  background-image: url("../img/0_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-bg.bg1 {
+  background-image: url("../img/1_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-bg.bg2 {
+  background-image: url("../img/2_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.not_logged_in #clock,
+.not_logged_in #greeting,
+.not_logged_in #todo-form,
+.not_logged_in #todo-list,
+.not_logged_in #quote,
+.not_logged_in #weather,
+.not_logged_in #news {
+  display: none;
+}
+
+.not_logged_in .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login {
+  display: none;
+}
+
+.login__title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.login #login-form input {
+  background: transparent;
+  border-width: 0 0 1px 0;
+  border-color: #fff;
+  color: #fff;
+  width: 300px;
+}
+
+#todo-form input {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+#clock {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#greeting {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20%;
+}
+
+#quote span:first-child {
+  margin: 15px 0;
+  text-align: center;
+}
+
+#quote span:last-child {
+  text-decoration: underline;
+}
+
+.todo {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.todo .delete-btn {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  margin-left: 0.5rem;
+  border: 0;
+  width: 25px;
+  height: 25px;
+}
+
+#todo-list {
+  padding: 5px 0 0 12px;
+}
+
+#todo-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#weather {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+}
